@@ -1,0 +1,102 @@
+{
+  "symbols.hidesExplorerArrows": false,
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.colorTheme": "Bearded Theme Arc",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "editor.fontFamily": "Maple Mono NF CN, Menlo, Monaco, 'Courier New', monospace",
+  "gitlens.codeLens.scopes": ["document"],
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.hovers.annotations.details": false,
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.changes.locations": ["gutter", "line", "overview"],
+  "gitlens.heatmap.locations": ["gutter"],
+  "gitlens.heatmap.fadeLines": false,
+  "gitlens.graph.showDetailsView": false,
+  "gitlens.views.commits.files.layout": "tree",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "editor.minimap.renderCharacters": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.smoothScrolling": true,
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "NOTE"],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "light-bulb",
+      "foreground": "#3c3c3c",
+      "background": "#ff9100",
+      "iconColour": "#ff9100",
+      "gutterIcon": true,
+      "type": "text-and-comment"
+    },
+    "FIXME": {
+      "icon": "flame",
+      "foreground": "#eaeaea",
+      "background": "#fe3b3b",
+      "iconColour": "#fe3b3b",
+      "gutterIcon": true,
+      "type": "text-and-comment"
+    },
+    "BUG": {
+      "icon": "bug",
+      "foreground": "#363636",
+      "background": "#cde81e",
+      "iconColour": "#cde81e",
+      "gutterIcon": true,
+      "type": "text-and-comment"
+    },
+    "NOTE": {
+      "icon": "light-bulb",
+      "foreground": "#3c3c3c",
+      "background": "#a7d5fa",
+      "iconColour": "#a7d5fa",
+      "gutterIcon": true,
+      "type": "text-and-comment"
+    }
+  },
+  "cSpell.userWords": [
+    "wechat"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": [":m .-2<CR>"]
+    },
+    {
+      "before": ["<S-j>"],
+      "commands": [":m .+1<CR>"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["cursorDown", "cursorDown", "cursorDown", "cursorDown"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["cursorUp", "cursorUp", "cursorUp", "cursorUp"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+  "vim.overrideCopy": false,
+  "vim.vimrc.enable": true
+}
