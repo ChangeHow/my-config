@@ -1,0 +1,30 @@
+# utilities
+alias reload-zsh="source ~/.zshrc"
+alias edit-zsh="vi /Users/changehow/.zshrc"
+alias edit-plugins="vi /Users/changehow/.config/suitup/plugins"
+alias edit-aliases="vi /Users/changehow/.config/suitup/aliases"
+alias ll="eza -abghlS --icons=always"
+alias ltree="eza -abghS --icons=always --tree --git-ignore"
+alias cat="bat"
+# alias python="python3"
+
+# git
+alias gph="git push"
+alias gphu='gph -u origin "$(git branch --show-current 2>/dev/null)"'
+alias gcol="git checkout --no-guess" # only suggest local branches
+alias gpl="git pull --rebase"
+alias gcz="git-cz"
+alias gczn="git-cz -n" # skip checkers
+alias gst="git status"
+alias glg="git log --graph --abbrev-commit --decorate --date=relative --format=' %C(auto)%h %C(bold blue)%<(12,trunc)%an%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)'"
+
+# npm
+alias bnpm="npm --registry https://bnpm.byted.org"
+alias bnpx="npx --registry https://bnpm.byted.org"
+
+# search
+alias ss="fzf --walker-skip .git,node_modules --preview 'bat -n --color=always {}'" # search with preview
+# alias ssc="cd ./**" # search in current directory
+
+# ide
+alias code="echo \"open file in windsurf\" && windsurf"
